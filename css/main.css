@@ -1,0 +1,522 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "고딕";
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    outline: none;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 섹션 */
+.wrap {
+    width: 100%;
+}
+
+.slider {
+    width: 1140px;
+    height: 420px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slidelist {
+    width: 4560px;
+}
+
+.slidelist > li {
+    float: left;
+
+}
+
+.slidelist > li > a > img {
+    width: 1140px;
+    height: 420px;
+}
+
+.slider > span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    font-size: 38px;
+    color: #fff;
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    height: 50px;
+    transform: translateY(-50%);
+}
+
+.slider > span:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 10px 10px 0px;
+    padding: 10px;
+}
+
+.next {
+    right: 0;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+}
+
+.new_section {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.new_book {
+    width: 1140px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.new_book_title {
+    position: relative;
+    display: block;
+    height: 36px;
+    padding-bottom: 20px;
+    padding-top: 32px;
+}
+
+.title {
+    width: 200px;
+    font-size: 24px;
+    font-weight: 700;
+    min-height: 36px;
+    line-height: 36px;
+    color: #202020;
+    padding-right: 190px;
+}
+
+.sub_title_list {
+    width: 305px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+    line-height: 36px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+.name_check {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.more {
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 24px;
+    color: #616161;
+    cursor: pointer;
+    float: right;
+    line-height: 36px;
+    text-decoration: underline;
+    text-underline-position: under;
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+.new_slide {
+    width: 1140px;
+    height: 270px;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+}
+
+.new_box {
+    width: 100%;
+    height: 100%;
+    padding: 12px 17px;
+}
+
+.new_slide_book {
+    float: left;
+    vertical-align: top;
+}
+
+.new_book_inner {
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.thumbnail_click{
+    background: linear-gradient(to top, #FFFF92 40%, #FFFFFF 60%);
+    color: #202020;
+}
+
+.new_thumbnail0 {
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.new_thumbnail {
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.new_thumbnail1 {
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.new_thumbnail2 {
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.new_thumbnail3 {
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.new_thumbnail4{
+    padding: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.new_thumbnail_price {
+    padding: 0 25px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.thumbnail_img {
+    border: 1px solid #e0e0e0;
+    background-position: center top !important;
+    background-size: 100% 100% !important;
+    height: 175px;
+    width: 130px;
+}
+
+.card {
+    padding-top: 15px;
+}
+
+.card_title {
+    width: 122px;
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 24px;
+    line-height: 24px;
+    color: #202020;
+    max-height: 48px;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.card_price {
+    padding-top: 3px;
+    position: relative;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: 700;
+    min-height: 28px;
+    line-height: 28px;
+    color: #e14f4f;
+    display: inline-block;
+    letter-spacing: -0.5px;
+    padding-right: 6px;
+    position: relative;
+}
+
+.persent {
+    color: #e14f4f;
+}
+
+.mid {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.mid_box {
+    margin: 0 auto;
+    width: 1140px;
+    height: auto;
+    position: relative;
+}
+
+.mid_left {
+    width: 760px;
+    position: relative;
+}
+
+.mid_left_top {
+    display: inline-block;
+    height: 36px;
+    width: 760px;
+}
+
+.mid_left_title {
+    font-size: 24px;
+    font-weight: 700;
+    min-height: 36px;
+    line-height: 36px;
+    color: #202020;
+    padding-right: 40px;
+    width: 160px;
+}
+
+.mid_left_sub {
+    width: 380px;
+    position: absolute;
+    top: 10px;
+    left: 230px;
+}
+
+.left_sub_list {
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 24px;
+    color: #616161;
+    padding-left: 16px;
+    line-height: 36px;
+    width: 50px;
+    display: block;
+}
+
+.name {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 24px;
+    color: #616161;
+    padding-left: 16px;
+}
+
+.nameCheck {
+    background: linear-gradient(to top, #ffff92 40%, #ffffff 60%);
+    color: #202020;
+}
+
+.mid_Lmore {
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 24px;
+    color: #616161;
+    cursor: pointer;
+    float: right;
+    line-height: 36px;
+    text-decoration: underline;
+    text-underline-position: under;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mid_main {
+    width: 760px;
+    height: 900px;
+    padding-top: 40px;
+}
+
+.mid_right {
+    width: 330px;
+    padding-left: 50px;
+    height: 900px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mid_right_top {
+    display: inline-block;
+    height: 36px;
+    width: 320px;
+    position: relative;
+}
+
+.mid_right_title {
+    font-size: 24px;
+    font-weight: 700;
+    min-height: 36px;
+    line-height: 36px;
+    color: #202020;
+    width: 100px;
+    position: absolute;
+    left: 0;
+}
+
+.mid_right_sub {
+    width: 130px;
+    position: absolute;
+    top: 0px;
+    left: 90px;
+}
+
+.right_sub_list {
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 24px;
+    color: #616161;
+    line-height: 36px;
+    width: 200px;
+    padding-left: 20px;
+}
+
+.name_right {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 24px;
+    color: #616161;
+    padding-left: 5px;
+}
+
+.nameCheck {
+    background: linear-gradient(to top, #ffff92 40%, #ffffff 60%);
+    color: #202020;
+}
+
+.mid_Rmore {
+    font-size: 14px;
+    font-weight: 400;
+    min-height: 24px;
+    color: #616161;
+    cursor: pointer;
+    float: right;
+    line-height: 36px;
+    text-decoration: underline;
+    text-underline-position: under;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.mid_right_main {
+    padding-top: 40px;
+    padding-bottom: 8px;
+    display: inherit;
+    width: 100%;
+    height: 564px;
+}
+
+.right_main {
+    border: 1px solid #ECECEC;
+    touch-action: pan-y !important
+}
+
+.right_sub {
+    padding: 0 10px;
+}
+
+.right_sub_inner {
+    padding: 17px 0;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+}
+
+
+
+.imgbox {
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    z-index: 10;
+}
+
+.right_sub_contents {
+    cursor: pointer;
+    position: relative;
+    padding: 2px 0 2px 100px;
+    position: absolute;
+    top: 0;
+}
+
+.contents_title {
+    font-size: 16px;
+    font-weight: 700;
+    min-height: 28px;
+    line-height: 28px;
+    color: #202020;
+}
+
+.contents_sub_title {
+    font-size: 12px;
+    font-weight: 400;
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.contents {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #616161;
+    max-height: 48px;
+    min-height: 48px;
+    padding-top: 5px;
+    overflow: hidden;
+}
+
+.right_bottom {
+    line-height: 34px;
+    height: 34px;
+    text-align: center;
+}
+
+.step1 {
+    background-color: #e0e0e0;
+    border-radius: 17px;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 0 5px;
+    width: 8px;
+}
+.step2 {
+    background-color: #e0e0e0;
+    border-radius: 17px;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 0 5px;
+    width: 8px;
+}
+
+.step3 {
+    background-color: #e0e0e0;
+    border-radius: 17px;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 0 5px;
+    width: 8px;
+}
